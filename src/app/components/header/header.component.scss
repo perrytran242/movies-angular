@@ -1,0 +1,26 @@
+.header {
+  height: 70px;
+  background-color: #517f74;
+  // position: fixed;
+
+  .header--logo {
+    color: #fff;
+    font-size: 30px;
+  }
+  .header--search-bar {
+    input {
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      height: 30px;
+      padding: 10px;
+    }
+  }
+  .header--hamburger-menu {
+    i {
+      color: #fff;
+      font-size: 30px;
+
+    }
+  }
+}
