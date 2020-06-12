@@ -1,3 +1,8 @@
 <div class="container movie-list-container">
   <h1 class="movie-list-container--header text-center text-uppercase mt-3">Popular Movies</h1>
+  <div class="row d-flex flex-wrap justify-content-around">
+    <div *ngFor="let movie of movieList" class="mb-2">
+      <img [src]="movie.poster_path">
+    </div>
+  </div>
 </div>
