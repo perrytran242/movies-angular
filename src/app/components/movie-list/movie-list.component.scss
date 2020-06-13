@@ -2,4 +2,12 @@
   .movie-list-container--header {
     color: #fff;
   }
+  .movie-list-container--movie {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: .2s transform;
+    }
+  }
 }

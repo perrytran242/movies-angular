@@ -4,7 +4,7 @@
       PTMovieLibrary
     </div>
     <div class="header--search-bar">
-      <input type="text">
+      <input (input)="movieService.searchTerm$.next($event.target.value)" type="text">
     </div>
     <div class="header--hamburger-menu">
       <i class="fa fa-bars"></i>
