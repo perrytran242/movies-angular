@@ -14,8 +14,8 @@ export class MovieService {
     private http: HttpClient,
   ) { }
 
-  getMovieList() {
-    return this.http.get(`${environment.API_URL}getMovies`);
+  getMovieList(page: number) {
+    return this.http.get(`${environment.API_URL}getMovies?page=${page}`);
   }
 
   searchMovie(terms: Observable<string>) {

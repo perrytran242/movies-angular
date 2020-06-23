@@ -16,6 +16,6 @@ export class HeroResolverService implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable <any> {
-    return this.movieService.getMovieList();
+    return this.movieService.getMovieList(1);
   }
 }

@@ -5,4 +5,9 @@
       <img [src]="movie.poster_path">
     </div>
   </div>
+
+  <div class="row navigation d-flex justify-content-center p-2">
+    <button (click)="onBackPage()" type="button" class="btn btn-primary mr-3">Back</button>
+    <button (click)="onNextPage()" type="button" class="btn btn-secondary">Next</button>
+  </div>
 </div>
