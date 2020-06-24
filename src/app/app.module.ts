@@ -7,7 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { SignUpComponent } from './components/auth/sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,13 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     MovieListComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],
